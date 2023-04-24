@@ -1,7 +1,7 @@
 # TUCH
 > Source code of paper "Transformer-based Unsupervised Cross-modal Hashing with Weight Fusion"
 ## Introduction
-
+With the explosive growth of information on the Internet, cross-modal retrieval has become an important and valuable frontier hot-spot. Deep hashing has achieved great success in cross-modal retrieval due to its low storage consumption and high search speed. However, most deep cross-modal hashing methods construct parallel networks to process multi-modal data, which ignores the integrated representation in view of the cross-modal graphic information. In this paper, we propose a novel unsupervised cross-modal hashing method by constructing two mode-specific encoders and a fusion module. The fusion module is designed to associate various modes to mine the semantic structure of the cross-modal data. The joint consistent loss is constructed to preserve inter-modal and intra-modal similarities simultaneously. In addition, we utilize Swin Transformer backbone to extract more discriminative image embeddings instead of commonly used convolutional neural networks. Experiments on three cross-modal datasets show that the proposed method obtains superior accuracy in comparison with state-of-the-art cross-modal hashing baselines.
 ## Requirements
 - Python: 3.x
 - h5py: 3.7.0
@@ -9,7 +9,7 @@
 - pytorch: 1.12.0
 - scipy: 1.7.3
 ## Run
-- Update the [settings.py](https://github.com/idejie/DSAH/blob/master/settings.py) with your `data_dir`. And change the value [` EVAL`](https://github.com/idejie/DSAH/blob/be1f3edba30015b164bc41994067a71273cbeb30/settings.py#L6), for **train** setting it with `False`
+- Update the [settings.py](https://github.com/sellaner/TUCH/blob/main/source/settings.py) with your `data_dir`. And change the value **'EVAL'**, for **train** setting it with `False`
 - run the `train.py`
   ```shell
   python train.py
@@ -27,4 +27,4 @@ For datasets, we follow [Deep Cross-Modal Hashing's Github (Jiang, CVPR 2017)](h
 
 
 ## References
-- [DJSRH](https://github.com/zs-zhong/DJSRH))
+- [DJSRH](https://github.com/zs-zhong/DJSRH)
